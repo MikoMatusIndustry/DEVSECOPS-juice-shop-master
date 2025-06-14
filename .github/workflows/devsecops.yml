@@ -43,6 +43,7 @@ jobs:
 
 
     - name:  Run SAST with Semgrep
+      if: always()
       uses: returntocorp/semgrep-action@v1
       with:
         config: "p/javascript"
