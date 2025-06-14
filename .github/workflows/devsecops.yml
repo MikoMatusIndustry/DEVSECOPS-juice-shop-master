@@ -38,3 +38,11 @@ jobs:
 
     - name: Build Docker image
       run: docker build -t juice-shop:latest .
+
+
+
+
+    - name:  Run SAST with Semgrep
+      uses: returntocorp/semgrep-action@v1
+      with:
+        config: "p/javascript"
