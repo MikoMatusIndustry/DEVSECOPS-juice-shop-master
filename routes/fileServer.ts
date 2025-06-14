@@ -29,7 +29,10 @@ export function servePublicFiles () {
 
       challengeUtils.solveIf(challenges.directoryListingChallenge, () => { return file.toLowerCase() === 'acquisitions.md' })
       verifySuccessfulPoisonNullByteExploit(file)
-
+      
+      if (file.includes('..') || file.includes('/')) {
+	return res.status(400).send('Invalid file path')
+    }	
       res.sendFile(path.resolve('ftp/', file))
     } else {
       res.status(403)
