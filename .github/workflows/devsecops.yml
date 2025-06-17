@@ -51,7 +51,7 @@ jobs:
 
 
     - name: Scan for secrets with Gitleaks
+      if: always()
       uses: zricethezav/gitleaks-action@v2.3.3
-      with:
-        config-path: .gitleaks.toml
       continue-on-error: true
+
