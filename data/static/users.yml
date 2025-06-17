@@ -1,6 +1,6 @@
 -
   email: admin
-  password: 'admin123'
+  password: '<REDACTED>'
   key: admin
   role: 'admin'
   securityQuestion:
@@ -28,7 +28,7 @@
       expYear: 2086
 -
   email: jim
-  password: 'ncc-1701'
+  password: '<REDACTED>'
   key: jim
   role: 'customer'
   walletBalance: 100
@@ -147,7 +147,7 @@
   email: wurstbrot
   username: wurstbrot
   password: 'EinBelegtesBrotMitSchinkenSCHINKEN!'
-  totpSecret: IFTXE3SPOEYVURT2MRYGI52TKJ4HC3KH
+  totpSecret: '<REDACTED>'
   key: timo
   role: 'admin'
   securityQuestion:
@@ -155,7 +155,7 @@
     answer: 'NZMJLjEinU7TFElDIYW8'
 -
   email: amy
-  password: 'K1f.....................'
+  password: '<REDACTED>'
   key: amy
   role: 'customer'
   securityQuestion:
@@ -163,7 +163,7 @@
     answer: 'Dr. Dr. Dr. Dr. Zoidberg'
 -
   email: bjoern
-  password: 'monkey summer birthday are all bad passwords but work just fine in a long passphrase'
+  password: '<REDACTED>'
   key: bjoern
   profileImage: '12.png'
   role: 'admin'
