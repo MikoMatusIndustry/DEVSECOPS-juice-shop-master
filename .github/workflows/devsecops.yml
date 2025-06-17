@@ -47,3 +47,11 @@ jobs:
       uses: returntocorp/semgrep-action@v1
       with:
         config: "p/javascript"
+
+
+
+    - name: Scan for secrets with Gitleaks
+      uses: zricethezav/gitleaks-action@v2.3.3
+      with:
+        config-path: .gitleaks.toml
+      continue-on-error: true
